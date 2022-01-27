@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link href="styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300;1,400;1,900&display=swap" rel="stylesheet">
+    <title>Запчасти для грузовиков</title>
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <header>
+        <div class="header_content">
+            <div class="header_img"></div>
+            <div class="header_text">
+                <p> работаем с 1992 года </p>
+                <h2>АВТОЗАПЧАСТИ ДЛЯ ОТЕЧЕСТВЕННЫХ ГРУЗОВЫХ АВТОМОБИЛЕЙ</h2>
+            </div>
+            <div class="adress">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 22"> <path fill="#7C7575" fill-rule="nonzero" d="M13.176 2.247A7.62 7.62 0 0 0 7.752 0a7.62 7.62 0 0 0-5.424 2.247c-2.681 2.68-3.014 7.725-.722 10.78l6.146 8.876 6.136-8.863c2.302-3.068 1.97-8.112-.712-10.793zM7.823 10.4a2.804 2.804 0 0 1-2.8-2.8c0-1.544 1.256-2.8 2.8-2.8 1.543 0 2.8 1.256 2.8 2.8 0 1.544-1.257 2.8-2.8 2.8z"></path> </svg>
+                <p>г.Воронеж, ул.Матросова, 127</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item active_link">
+                  <a class="nav-link" aria-current="page" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+
+
+       <!--      <ul class="nav_list">
+                <li class="nav_item">пункт1</li>
+                <li class="nav_item">пункт2</li>
+                <li class="nav_item">пункт3</li>
+                <li class="nav_item">пункт4</li>
+            </ul> -->
+        </nav>
+    </header>
+    <main>
+        <aside class="catalog_aside">
+            
+                    <h4 class="ourBrands">
+                        Реализуем запчасти к автомобилям
+                    </h4>
+                
+                 
+                <div class="carBrands">
+                    
+                    <div class="carBrand-item" data-key="0">
+                        <img src="/img/small_logo/ural_small.png">
+                    </div>
+                    <div class="carBrand-item" data-key="1">
+                        <img src="/img/small_logo/gaz_small.png">
+                    </div>
+                    <div class="carBrand-item" data-key="2">
+                        <img src="/img/small_logo/zil_small.png">
+                    </div>
+                    <div class="carBrand-item" data-key="3">
+                        <img src="/img/small_logo/kamaz_small.png">
+                    </div>
+                    <div class="carBrand-item" data-key="4">
+                        <img src="/img/small_logo/maz_small.png">
+                    </div>
+                    <div class="carBrand-item" data-key="5">
+                        <img src="/img/small_logo/paz_small.png">
+                    </div>
+
+               
+            </div>
+        </aside> 
+        <div class="main_content">
+        <div class="main_text">
+            <p> Рады приветствовать Вас на странице нашего магазина!</p>
+            <p> Мы ведем свою деятельность около 20 лет. За это время наладили тесные связи с прямыми поставщиками-производителями запчастей для крупной грузовой техники, заслужили их доверие, поэтому имеем гибкую систему скидок.</p>
+            <p> В настоящее время ведется оптимизация складских площадей, в виду чего было принято решение о массовой распродаже имеющейся продукции.</p>
+            <p> Оставьите заявку в форме <span class="feedback_form">ОБРАТНОЙ СВЯЗИ</span> или позвоните нам и мы подберем нужную деталь</p>
+        </div>
+    </div>
+        <aside class="contacts_aside">
+            
+            <form>
+                <h6>Заполните форму и мы отправим ответное письмо с интересущей вас информацией:</h6>
+                <div class="mb-3">
+                    <!-- <label for="validationCustom01" class="form-label"></label> -->
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="имя"  required>
+                  
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="exampleInputEmail1" class="form-label"></label> -->
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="электронная почта *"  required>
+                 <!--  <div id="emailHelp" class="form-text">Мы никогда никому не передадим ваши контактные данные</div> -->
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Опишите что вы ищите</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="например: карданный вал УРАЛ"></textarea>
+                   
+                </div>
+                <input type="hidden" name="project_name" value="Автозапчасти.рф">
+                <input type="hidden" name="admin_email"  value="ryabinna1986@mail.ru">
+                <input type="hidden" name="form_subject" value="Форма сообщение от клиента">
+                
+                <button type="submit" class="btn btn-primary">ОТПРАВИТЬ</button>
+              </form>
+             <div class="phone_active">
+                 <button class= "btn btn-primary">ПОЗВОНИТЕ НАМ</button>
+                </div>
+        </aside>
+    </main>
+    <div class="second_window">
+        
+    </div>
+
+    <footer></footer>
+    
+    
+
+</body>
+</html>
