@@ -285,7 +285,7 @@ let saleCards = document.querySelectorAll('.gallery_item');
 let btnLeft = document.querySelector('.toLeft');
 
 
-let key = [0, 1, 2];
+let key = [0, 1, 2, 3, 4];
 
 saleCards.forEach((el, i) => {
     console.log(key.includes(i))
