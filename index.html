@@ -1,134 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
-	<link href="styles/style.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300;1,400;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300;1,400;1,900&display=swap"
+        rel="stylesheet">
     <title>Запчасти для грузовиков</title>
 </head>
+
 <body>
     <script src="script.js" defer></script>
-    <header>
-        <div class="header_content">
-            <div class="header_img"></div>
-            <div class="header_text">
-                <p> работаем с 1992 года </p>
-                <h2>АВТОЗАПЧАСТИ ДЛЯ ОТЕЧЕСТВЕННЫХ ГРУЗОВЫХ АВТОМОБИЛЕЙ</h2>
-            </div>
-            <div class="adress">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 22"> <path fill="#7C7575" fill-rule="nonzero" d="M13.176 2.247A7.62 7.62 0 0 0 7.752 0a7.62 7.62 0 0 0-5.424 2.247c-2.681 2.68-3.014 7.725-.722 10.78l6.146 8.876 6.136-8.863c2.302-3.068 1.97-8.112-.712-10.793zM7.823 10.4a2.804 2.804 0 0 1-2.8-2.8c0-1.544 1.256-2.8 2.8-2.8 1.543 0 2.8 1.256 2.8 2.8 0 1.544-1.257 2.8-2.8 2.8z"></path> </svg>
-                <p>г.Воронеж, ул.Матросова, 127</p>
-            </div>
-        </div>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item active_link">
-                  <a class="nav-link" aria-current="page" href="#">Главная</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-              </ul>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <div class="wrapper">
+        <header>
+            <div class="header_content">
+                <div class="header_img"></div>
+                <div class="header_text">
+                    <p> работаем с 1992 года </p>
 
 
-       <!--      <ul class="nav_list">
-                <li class="nav_item">пункт1</li>
-                <li class="nav_item">пункт2</li>
-                <li class="nav_item">пункт3</li>
-                <li class="nav_item">пункт4</li>
-            </ul> -->
-        </nav>
-    </header>
-    <main>
-        <aside class="catalog_aside">
-            
-                    <h4 class="ourBrands">
-                        Реализуем запчасти к автомобилям
-                    </h4>
-                
-                 
+                    <h3>АВТОЗАПЧАСТИ ДЛЯ ОТЕЧЕСТВЕННЫХ ГРУЗОВЫХ АВТОМОБИЛЕЙ</h3>
+                </div>
+                <div class="adress">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 22">
+                        <path fill="#512626" fill-rule="nonzero"
+                            d="M13.176 2.247A7.62 7.62 0 0 0 7.752 0a7.62 7.62 0 0 0-5.424 2.247c-2.681 2.68-3.014 7.725-.722 10.78l6.146 8.876 6.136-8.863c2.302-3.068 1.97-8.112-.712-10.793zM7.823 10.4a2.804 2.804 0 0 1-2.8-2.8c0-1.544 1.256-2.8 2.8-2.8 1.543 0 2.8 1.256 2.8 2.8 0 1.544-1.257 2.8-2.8 2.8z">
+                        </path>
+                    </svg>
+                    <p>г.Воронеж, ул.Матросова, 127</p>
+                    <p><a href="tel:+79066708882">8(906)670-88-82</a></p>
+
+                </div>
+            </div>
+            <nav class="nav_header">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item active_link">
+                        <a class="nav-link active_a" aria-current="page" href="index.html#main">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#brands_page">Марки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sale_page">Акции</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact_page">Контакты</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+        <main id="main">
+            <aside class="catalog_aside">
+
+                <h4 class="ourBrands">
+                    Реализуем запчасти:
+                </h4>
+
+
                 <div class="carBrands">
-                    
+
                     <div class="carBrand-item" data-key="0">
-                        <img src="/img/small_logo/ural_small.png">
+                        <img src="img/small_logo/ural.png">
                     </div>
                     <div class="carBrand-item" data-key="1">
-                        <img src="/img/small_logo/gaz_small.png">
+                        <img src="img/small_logo/gaz.png">
                     </div>
                     <div class="carBrand-item" data-key="2">
-                        <img src="/img/small_logo/zil_small.png">
+                        <img src="img/small_logo/zil.png">
                     </div>
                     <div class="carBrand-item" data-key="3">
-                        <img src="/img/small_logo/kamaz_small.png">
+                        <img src="img/small_logo/kamaz.png">
                     </div>
                     <div class="carBrand-item" data-key="4">
-                        <img src="/img/small_logo/maz_small.png">
+                        <img src="img/small_logo/maz.png">
                     </div>
                     <div class="carBrand-item" data-key="5">
-                        <img src="/img/small_logo/paz_small.png">
+                        <img src="img/small_logo/paz.png">
                     </div>
 
-               
+
+                </div>
+            </aside>
+            <div class="main_content">
+                <div class="main_text">
+                    <p> Рады приветствовать Вас на странице нашего магазина!</p>
+                    <p> Мы ведем свою деятельность около 20 лет. За это время наладили тесные связи с прямыми
+                        поставщиками-производителями запчастей для крупной грузовой техники, заслужили их доверие,
+                        поэтому имеем гибкую систему скидок.</p>
+                    <p> В настоящее время ведется оптимизация складских площадей, в виду чего было принято решение о
+                        массовой распродаже имеющейся продукции.</p>
+                    <p> Оставьите заявку в форме <span class="feedback_form">ОБРАТНОЙ СВЯЗИ</span> или позвоните нам и
+                        мы подберем нужную деталь.</p>
+                </div>
             </div>
-        </aside> 
-        <div class="main_content">
-        <div class="main_text">
-            <p> Рады приветствовать Вас на странице нашего магазина!</p>
-            <p> Мы ведем свою деятельность около 20 лет. За это время наладили тесные связи с прямыми поставщиками-производителями запчастей для крупной грузовой техники, заслужили их доверие, поэтому имеем гибкую систему скидок.</p>
-            <p> В настоящее время ведется оптимизация складских площадей, в виду чего было принято решение о массовой распродаже имеющейся продукции.</p>
-            <p> Оставьите заявку в форме <span class="feedback_form">ОБРАТНОЙ СВЯЗИ</span> или позвоните нам и мы подберем нужную деталь</p>
+            <aside class="contacts_aside">
+
+                <form>
+                    <h6>Заполните форму и мы отправим ответное письмо с интересущей вас информацией:</h6>
+                    <div class="mb-3">
+                        <!-- <label for="validationCustom01" class="form-label"></label> -->
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="имя" required>
+
+                    </div>
+                    <div class="mb-3">
+                        <!-- <label for="exampleInputEmail1" class="form-label"></label> -->
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="электронная почта *" required>
+                        <!--  <div id="emailHelp" class="form-text">Мы никогда никому не передадим ваши контактные данные</div> -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Опишите что вы ищите</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="например: карданный вал УРАЛ"></textarea>
+
+                    </div>
+                    <input type="hidden" name="project_name" value="Автозапчасти.рф">
+                    <input type="hidden" name="admin_email" value="ryabinna1986@mail.ru">
+                    <input type="hidden" name="form_subject" value="Форма сообщение от клиента">
+
+                    <button type="submit" class="btn btn-primary">ОТПРАВИТЬ</button>
+                </form>
+                <div class="phone_active">
+                    <div class="call">ПОЗВОНИТЕ НАМ</div>
+                    <a href="tel:+79066708882">8(906)670-88-82</a>
+                </div>
+            </aside>
+        </main>
+
+        <div class="brands_page" id="brands_page">
+            <div class="header_brands_page">
+
+                <p>На нашем складе представлен широкий ассортимент запасных частей, деталей, ремкомплектов и прочей
+                    продукции к грузовым автомобилям <span>следующих марок:</span> </p>
+            </div>
+            <div class="brands_wrapper">
+
+                <!-- <div class="brand_item">
+                    <div class="brand_wrap1">
+                        <p class="brand_name">УРАЛ</p>
+                        <p class="brand_description">Высокая проходимость, работа в суровых погодных условиях - это
+                            отличительная черта автомобилей УРАЛ.</p>
+                    </div>
+                    <div class="brand_wrap2">
+                        <img class="brand_logo" src="img/small_logo/ural.png"> </img>
+                        <button class="price">Прайс-лист</button>
+                    </div>
+                </div>
+                <div class="brand_item">
+                    <div class="brand_wrap1">
+                        <p class="brand_name">ГАЗ</p>
+                        <p class="brand_description">Завод с более, чем 90-летней историей. Представляет широкий
+                            модельный ряд малотоннажных и среднетоннажных автомобилей, а также автобусов</p>
+                    </div>
+                    <div class="brand_wrap2">
+                        <img class="brand_logo" src="img/small_logo/gaz.png"> </img>
+                        <button class="price">Прайс-лист</button>
+                    </div>
+                </div>
+                <div class="brand_item">
+                    <div class="brand_wrap1">
+                        <p class="brand_name">ЗИЛ</p>
+                        <p class="brand_description">Около 8 млн грузовых автомобилей ЗИЛ было выпущено за время
+                            существования завода.</p>
+                    </div>
+                    <div class="brand_wrap2">
+                        <img class="brand_logo" src="img/small_logo/zil.png"> </img>
+                        <button class="price">Прайс-лист</button>
+                    </div>
+                </div>
+                <div class="brand_item">
+                    <div class="brand_wrap1">
+                        <p class="brand_name">КАМАЗ</p>
+                        <p class="brand_description">Около трети большегрузных грузовиков на постсоветсткой
+                            территории – это КАМАЗ. КАМАЗами пользуются более чем в 80 странах мира.</p>
+                    </div>
+                    <div class="brand_wrap2">
+                        <img class="brand_logo" src="img/small_logo/kamaz.png"> </img>
+                        <button class="price">Прайс-лист</button>
+                    </div>
+                </div>
+                <div class="brand_item">
+                    <div class="brand_wrap1">
+                        <p class="brand_name">МАЗ</p>
+                        <p class="brand_description">Одни из самых практичных и надежных тягачей, конечно же
+                            выпущены на автозаводе МАЗ. По соотношению цены и качества равныхим нет.</p>
+                    </div>
+                    <div class="brand_wrap2">
+                        <img class="brand_logo" src="img/small_logo/maz.png"> </img>
+                        <button class="price">Прайс-лист</button>
+                    </div>
+                </div>
+                <div class="brand_item">
+                    <div class="brand_wrap1">
+                        <p class="brand_name">ПАЗ</p>
+                        <p class="brand_description">Одни из самых практичных и надежных тягачей, конечно же
+                            выпущены на автозаводе МАЗ. По соотношению цены и качества равныхим нет.</p>
+                    </div>
+                    <div class="brand_wrap2">
+                        <img class="brand_logo" src="img/small_logo/paz.png"> </img>
+                        <button class="price">Прайс-лист</button>
+                    </div> -->
+                </div>
+            </div>
+            <!-- <div> <h4 title="скачать прайс-лист к а/м КАМАЗ">КАМАЗ </h4> 
+        <p>Около трети большегрузных грузовиков на постсоветсткой территории – это КАМАЗ. КАМАЗами пользуются более чем в 80 странах мира.</p></div>
+        <div> <h4>ГАЗ</h4>  <p>Завод с более, чем 90-летней историей. Представляет широкий модельный ряд малотоннажных и среднетоннажных автомобилей, а также автобусов</p></div>
+        <div> <h4>МАЗ</h4>  <p>Одни из самых практичных и надежных тягачей, конечно же выпущены на автозаводе МАЗ. По соотношению цены и качества равныхим нет. </p></div>
+        <div> <h4>ПАЗ</h4> <p>Одни из самых практичных и надежных тягачей, конечно же выпущены на автозаводе МАЗ. По соотношению цены и качества равныхим нет.</p></div>
+        <div> <h4>УРАЛ</h4><p>Высокая проходимость, работа в суровых погодных условиях - это отличительная черта автомобилей УРАЛ.</p></div>
+        <div> <h4>ЗИЛ</h4> <p>Около 8 млн грузовых автомобилей ЗИЛ было выпущено за время существования завода</p></div> -->
+
+
         </div>
-    </div>
-        <aside class="contacts_aside">
+        <div class="sale_page" id="sale_page">
+            <div class="sale_header">
+                <p>В настоящий момент реализуем товары по акционной цене:</p>
+            </div>
             
-            <form>
-                <h6>Заполните форму и мы отправим ответное письмо с интересущей вас информацией:</h6>
-                <div class="mb-3">
-                    <!-- <label for="validationCustom01" class="form-label"></label> -->
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="имя"  required>
-                  
-                </div>
-                <div class="mb-3">
-                    <!-- <label for="exampleInputEmail1" class="form-label"></label> -->
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="электронная почта *"  required>
-                 <!--  <div id="emailHelp" class="form-text">Мы никогда никому не передадим ваши контактные данные</div> -->
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Опишите что вы ищите</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="например: карданный вал УРАЛ"></textarea>
-                   
-                </div>
-                <input type="hidden" name="project_name" value="Автозапчасти.рф">
-                <input type="hidden" name="admin_email"  value="ryabinna1986@mail.ru">
-                <input type="hidden" name="form_subject" value="Форма сообщение от клиента">
-                
-                <button type="submit" class="btn btn-primary">ОТПРАВИТЬ</button>
-              </form>
-             <div class="phone_active">
-                 <button class= "btn btn-primary">ПОЗВОНИТЕ НАМ</button>
-                </div>
-        </aside>
-    </main>
-    <div class="second_window">
-        
+            <div class="sale_gallery">
+                <button class='toLeft' title="Наверх">
+                </button>
+              <!--   <div class="gallery_item">
+                    <p class="gallery_item_name">Карданный вал переднего моста УРАЛ</p>
+                    <p class="serial_number">Серийный номер: 111111</p>
+                    <img src="img/sale/1.jpg" alt="Карданный вал переднего моста УРАЛ "></в>
+                    <div class="base_price">15000 руб.</div>
+                    <div class="final_price">12000 руб.</div>
+                </div>  -->
+                <!-- <button class='toRight' title="Наверх">
+                </button> -->
+            </div>
+            <div class="sale_end">
+                <p>Звоните, мы поможем Вам определиться с нужной деталью!</p>
+            </div>
+
+        </div>
+        <div class="contact_page" id="contact_page">
+            <div class="contact_data">
+                <h3>Наш склад расположен по адресу</h3>
+                <p>г.Воронеж, ул.Матросова, д. 127</p>
+                <p>Нас легко найти: мы находимся между Юго-Западным рынком и Острогожским кольцом</p>
+                <p>У нас хорошие подьездные пути, место для парковки</p>
+                <p> Телефон: <a href="tel:+79066708882">8(906)670-88-82</a></p>
+                <p> Почта: <a href="mailto:Ryabinna1986@mail.ru">Ryabinna1986@mail.ru</a></p>
+            </div>
+            <div id="yandexmap"></div>
+
+        </div>
+        <button class='toUp' title="Наверх">
+
+        </button>
+
+        <footer>
+            <nav class="footer_nav">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html#main">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#brands_page">Марки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sale_page">Акции</a>
+                    </li>
+                    <li class="nav-item active_link">
+                        <a class="nav-link " href="index.html#contact_page">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
     </div>
 
-    <footer></footer>
-    
-    
 
 </body>
+
 </html>
