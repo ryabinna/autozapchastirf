@@ -472,3 +472,8 @@ form {
     width: 400px;
     height: 400px;
 }
+
+.anim {
+    opacity: 1;
+    transform: rotate(90deg);
+}
