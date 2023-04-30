@@ -136,7 +136,11 @@ window.addEventListener('load', function () {
     let startForm = document.querySelector('.form-control');
     let gallery = document.querySelector('.sale_gallery');
     let brandsWrapper = document.querySelector('.brands_wrapper'); 
+    let logo = document.querySelector('.header_img');
+   
 
+    logo.classList.add('anim');
+    
 
 
     /* смена фоновой картинки при наведении на категории из левого aside */
