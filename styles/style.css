@@ -23,9 +23,9 @@ header {
     left: 0;
     width: 100%;
 }  
-.header_img {
+/*.header_img {
     background: url(../img/logo.png) no-repeat center;
-}
+}*/
 
 .header_content {
     background-color: var(--light);
